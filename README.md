@@ -11,8 +11,11 @@
 
 ## 🛠️ Descripción
  Deber sobre el metodo de busqueda.
- Implemente el comando para elmetodo busqueda,
+
+ Implemente el comando para el metodo busqueda,
+
  Propuse un ejemplo el cual busca el elemento "200" en una lista,
+ 
  La cual es la siguiente: numeros = {100, 500, 700, 300, 200, 400, 900}
 ---
 
