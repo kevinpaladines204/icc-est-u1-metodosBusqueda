@@ -1,18 +1,26 @@
-## Getting Started
+## 📌 Información General
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- **Título:** Metodo Busqueda
+- **Asignatura:** Estructura de Datos
+- **Carrera:** Computación
+- **Estudiante:** Kevin Paladines
+- **Fecha:** 13/04/2025
+- **Profesor:** Ing. Pablo Torres
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🛠️ Descripción
+ Deber sobre el metodo de busqueda.
+ Implemente el comando para elmetodo busqueda,
+ Propuse un ejemplo el cual busca el elemento "200" en una lista,
+ La cual es la siguiente: numeros = {100, 500, 700, 300, 200, 400, 900}
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🧑‍💻 Ejemplo de Entrada
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```plaintext
+El Elemento '200' se encuentra en la posición: 4
+```
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
