@@ -18,11 +18,18 @@ public class ShowConsole {
     public int inputCode(){
         System.out.println("Ingrese el codigo ");
         int code = scanner.nextInt();
+        scanner.nextLine();
         return code;
     }
 
 
-    public void showMessage(String mesaage){
-        System.out.println(mesaage);
+    public void showMessage(String message){
+        System.out.println(message);
+    }
+
+    public String inputName(){
+        System.out.println("Ingrese el nombre ");
+        String name = scanner.nextLine();
+        return name;
     }
 }

@@ -11,6 +11,7 @@ public class MetodosBusqueda{
     public MetodosBusqueda(Persona[] persons){
         showConsole= new ShowConsole();
         this.people = persons;
+        showPersona();
 
     }
 
@@ -36,11 +37,11 @@ public class MetodosBusqueda{
         return -1;
     }
 
-    public void showPersona(int position){
+    public void showPersona(){
         int codeToFind = showConsole.inputCode();
         int indexPerson = findPersonaByCode(codeToFind);
         if(indexPerson >=0){
-            showConsole.showMessage("Persona con el codigo:" + codeToFind + "encontrada");
+            showConsole.showMessage("Persona con el codigo:" + " " + codeToFind + " " + "encontrada");
             showConsole.showMessage(people[indexPerson].toString());
         }else{
             showConsole.showMessage("Persona no encontrada");
@@ -48,12 +49,23 @@ public class MetodosBusqueda{
 
     }
 
-    /**public int findPersonByName(String name){
+    public int findPersonByName(String name){
+        for (int i = 0; i < people.length; i++) {
+            if(people[i].getName().equalsIgnoreCase(name)){
+                return i;
+            }
+        }
         return -1;
     }
 
     public void showPersonaByName(){
         String nameToFind = showConsole.inputName();
-        int indexPerson = findPersonByName(nameToFind);
-    }**/
+        int indexPersona = findPersonByName(nameToFind);
+        if(indexPersona >=0){
+            showConsole.showMessage("Persona con el nombre:" + " " + nameToFind + " " + "encontrada");
+            showConsole.showMessage(people[indexPersona].toString());
+        }else{
+            showConsole.showMessage("Persona no encontrada");
+        }
+    }
 }
